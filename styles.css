@@ -68,11 +68,11 @@ body {
 	font-size: 18px;
 	font-weight: 15px;
 	padding: 12px;
-	margin: 7px;
+	margin: 5px;
 	height: 50vw;
 }
 
-div .download-src {
+.download-src {
 	display: inline-block;
     border: 2px solid black;
     padding: 2rem;
@@ -91,19 +91,20 @@ div .download-src {
 
 .documentation-menu {
 	margin-left: 2.5rem;
-	overflow-x: hidden;
 	font-weight: bold;
-    width: 20%;
+    width: 18%;
 	height: 40vw;
     float: left;
-    padding: 1rem;
     border: 2px solid black;
+	flex-direction: coulmn;
 	flex: 1;
 	overflow: auto;
 }
 
 .documentation-menu li {
-	margin-bottom: .5rem;
+	width: 7.5rem;
+	margin-bottom: 0.25rem;
+	list-style-type: none;
 }
 
 .docs {

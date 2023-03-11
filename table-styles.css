@@ -12,6 +12,7 @@ table {
 }
 
 .overview thead tr {
+    height: 1rem;
     background-color: #009879;
     color: #ffffff;
     text-align: left;
