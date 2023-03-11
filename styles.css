@@ -19,8 +19,10 @@ body {
 	padding-right: 24px;
 }
 
-span .main-menu-bar {
-	padding-left: 24px;
+.main-menu-bar {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
 }
 
 .page-title {
@@ -64,7 +66,12 @@ span .main-menu-bar {
 .footer {
 	overflow: hidden;
 	background-color: #333;
-	padding: 24px;
+	padding: 20px;
+}
+
+.footer li {
+	display: inline-block;
+	margin: 0 10px;
 }
 
 .footer a {
@@ -79,6 +86,6 @@ span .main-menu-bar {
 	color: black;
 }
 
-.footer span {
-	padding-right: 25px;
+.footer .footer-menu-bar {
+	list-style-type: none;
 }
