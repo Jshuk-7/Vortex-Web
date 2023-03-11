@@ -16,6 +16,11 @@ body {
 
 #title {
 	text-align: left;
+	padding-right: 24px;
+}
+
+span .main-menu-bar {
+	padding-left: 24px;
 }
 
 .main-logo {
@@ -43,15 +48,32 @@ body {
 }
 
 .content {
-	background-color: #ddd;
+	background-color: #b8b8b8;
 	color: black;
 	font-size: 18px;
 	font-weight: 15px;
 	padding: 10px;
-	height: 200px;
+	height: 600px;
 }
 
 .footer {
-	background-color: #919191;
+	overflow: hidden;
+	background-color: #333;
 	padding: 24px;
+}
+
+.footer a {
+	color: #f2f2f2;
+	text-align: center;
+	padding: 8px;
+	text-decoration: none;
+}
+
+.footer a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.footer span {
+	padding-right: 25px;
 }
