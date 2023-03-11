@@ -94,7 +94,7 @@ div .download-src {
 	overflow-x: hidden;
 	font-weight: bold;
     width: 20%;
-	height: 25vw;
+	height: 40vw;
     float: left;
     padding: 1rem;
     border: 2px solid black;
@@ -110,7 +110,7 @@ div .download-src {
 	overflow: auto;
 	font-weight: bold;
     width: 75%;
-	height: 25vw;
+	height: 40vw;
     float: left;
     padding: 1rem;
 	text-align: left;
