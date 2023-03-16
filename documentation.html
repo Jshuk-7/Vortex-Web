@@ -23,7 +23,7 @@
     </div>
 
     <div class="content">
-        <span class="page-title"><p>Vortex v0.1a Documentation</p></span>
+        <span class="page-title"><p class="underline">Vortex v0.1a Documentation</p></span>
 
         <div class="documentation-menu">
             <div class="underline">Menu</div>
@@ -45,6 +45,15 @@
                         <button class="dropbtn">Application</button>
                         <div class="dropdown-content">
                             <a href="#Application">Application</a>
+                        </div>
+                    </div>
+                </li>
+
+                <li>
+                    <div class="dropdown">
+                        <button class="dropbtn">CursorMode</button>
+                        <div class="dropdown-content">
+                            <a href="#CursorMode">CursorMode</a>
                         </div>
                     </div>
                 </li>
@@ -88,9 +97,9 @@
 
                 <li>
                     <div class="dropdown">
-                        <button class="dropbtn">MouseCode</button>
+                        <button class="dropbtn">MouseButton</button>
                         <div class="dropdown-content">
-                            <a href="#MouseCode">MouseCode</a>
+                            <a href="#MouseButton">MouseButton</a>
                         </div>
                     </div>
                 </li>
@@ -630,21 +639,181 @@
                 </table>
             </div>
 
-            <h4 id="GamepadButton">Gamepad Button</h4>
-            <div c;ass="underline">
+            <h4 id="CursorMode">Cursor Mode</h4>
+            <div class="underline">
                 <h4>Public Fields</h4>
                 <table class="overview">
                     <thead>
                         <tr class="styled-row">
-                            <th></th>
-                            <th></th>
-                            <th></th>
+                            <th>Field</th>
+                            <th>Typename</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="styled-row">
+                            <td>Normal</td>
+                            <td>CursorMode</td>
+                            <td>Sets the cursor to the normal arrow, cursor motion is unlocked</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Hidden</td>
+                            <td>CursorMode</td>
+                            <td>Hides the cursor when it is over the window, cursor motion is unlocked</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Locked</td>
+                            <td>CursorMode</td>
+                            <td>Hides the cursor when it is over the window, cursor motion is locked</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Public Methods</h4>
+                <table class="overview">
+                    <thead>
+                        <tr class="styled-row">
+                            <th>Method</th>
+                            <th>Return Type</th>
+                            <th>Parameters</th>
+                            <th>Description</th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="styled-row"></tr>
                         <tr class="styled-row"></tr>
                         <tr class="styled-row"></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <h4 id="GamepadButton">Gamepad Button</h4>
+            <div class="underline">
+                <h4>Public Fields</h4>
+                <table class="overview">
+                    <thead>
+                        <tr class="styled-row">
+                            <th>Field</th>
+                            <th>Typename</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="styled-row">
+                            <td>A</td>
+                            <td>GamepadButton</td>
+                            <td>The A button on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>B</td>
+                            <td>GamepadButton</td>
+                            <td>The B button on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>X</td>
+                            <td>GamepadButton</td>
+                            <td>The X button on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Y</td>
+                            <td>GamepadButton</td>
+                            <td>The Y button on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>LeftBumper</td>
+                            <td>GamepadButton</td>
+                            <td>The Left Bumper on the gamepad</td>
+                        </tr>
+                        
+                        <tr class="styled-row">
+                            <td>RightBumper</td>
+                            <td>GamepadButton</td>
+                            <td>The Right Bumper on the gamepad</td>
+                        </tr>
+                        
+                        <tr class="styled-row">
+                            <td>Guide</td>
+                            <td>GamepadButton</td>
+                            <td>The Guide button on the gamepad</td>
+                        </tr>
+                        
+                        <tr class="styled-row">
+                            <td>Start</td>
+                            <td>GamepadButton</td>
+                            <td>The Start button on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Back</td>
+                            <td>GamepadButton</td>
+                            <td>The Back button on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Back</td>
+                            <td>LeftStick</td>
+                            <td>The Left Stick button on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>RightStick</td>
+                            <td>GamepadButton</td>
+                            <td>The Right Stick button on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Up</td>
+                            <td>GamepadButton</td>
+                            <td>The Up button on the DPAD</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Down</td>
+                            <td>GamepadButton</td>
+                            <td>The Down button on the DPAD</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Left</td>
+                            <td>GamepadButton</td>
+                            <td>The Left button on the DPAD</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Right</td>
+                            <td>GamepadButton</td>
+                            <td>The Right button on the DPAD</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Cross</td>
+                            <td>GamepadButton</td>
+                            <td>The Cross button on the gamepad</td>
+                        </tr>
+                        
+                        <tr class="styled-row">
+                            <td>Circle</td>
+                            <td>GamepadButton</td>
+                            <td>The Circle button on the gamepad</td>
+                        </tr>
+                        
+                        <tr class="styled-row">
+                            <td>Square</td>
+                            <td>GamepadButton</td>
+                            <td>The Square button on the gamepad</td>
+                        </tr>
+                        
+                        <tr class="styled-row">
+                            <td>Triangle</td>
+                            <td>GamepadButton</td>
+                            <td>The Triangle button on the gamepad</td>
+                        </tr>
                     </tbody>
                 </table>
 
@@ -678,9 +847,47 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="styled-row"></tr>
-                        <tr class="styled-row"></tr>
-                        <tr class="styled-row"></tr>
+                        <tr class="styled-row">
+                            <td>LeftX</td>
+                            <td>GamepadAxis</td>
+                            <td>The Left Stick's X axis on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>LeftY</td>
+                            <td>GamepadAxis</td>
+                            <td>The Left Stick's Y axis on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>RightX</td>
+                            <td>GamepadAxis</td>
+                            <td>The Right Stick's X axis on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>RightY</td>
+                            <td>GamepadAxis</td>
+                            <td>The Right Stick's Y axis on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>LeftTrigger</td>
+                            <td>GamepadAxis</td>
+                            <td>The Left Trigger axis on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>RightTrigger</td>
+                            <td>GamepadAxis</td>
+                            <td>The Right Trigger axis on the gamepad</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Last</td>
+                            <td>GamepadAxis</td>
+                            <td>The total number of GamepadAxis options, useful for checking if any axis was changed</td>
+                        </tr>
                     </tbody>
                 </table>
                 
@@ -879,7 +1086,12 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="styled-row"></tr>
+                        <tr class="styled-row">
+                            <td>MousePosition</td>
+                            <td>Vector2</td>
+                            <td>The current position of the mouse cursor</td>
+                        </tr>
+
                         <tr class="styled-row"></tr>
                         <tr class="styled-row"></tr>
                     </tbody>
@@ -896,9 +1108,63 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="styled-row"></tr>
-                        <tr class="styled-row"></tr>
-                        <tr class="styled-row"></tr>
+                        <tr class="styled-row">
+                            <td>IsKeyPressed</td>
+                            <td>bool</td>
+                            <td>KeyCode</td>
+                            <td>Returns true if the given key was pressed during the current frame</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>IsKeyReleased</td>
+                            <td>bool</td>
+                            <td>KeyCode</td>
+                            <td>Returns true if the given key was released during the current frame</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>IsKeyDown</td>
+                            <td>bool</td>
+                            <td>KeyCode</td>
+                            <td>Returns true if the given key was down during the current frame</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>IsKeyUp</td>
+                            <td>bool</td>
+                            <td>KeyCode</td>
+                            <td>Returns true if the given key was up during the current frame</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>IsMouseButtonPressed</td>
+                            <td>bool</td>
+                            <td>MouseButton</td>
+                            <td>Returns true if the given button was pressed during the current frame</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>IsMouseButtonReleased</td>
+                            <td>bool</td>
+                            <td>MouseButton</td>
+                            <td>Returns true if the given button was released during the current frame</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>IsMouseButtonDown</td>
+                            <td>bool</td>
+                            <td>MouseButton</td>
+                            <td>Returns true if the given button was down during the current frame</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>IsMouseButtonUp</td>
+                            <td>bool</td>
+                            <td>MouseButton</td>
+                            <td>Returns true if the given button was up during the current frame</td>
+                        </tr>
+
+
                     </tbody>
                 </table>
             </div>
@@ -939,7 +1205,7 @@
                 </table>
             </div>
 
-            <h4 id="MouseCode">Mouse Code</h4>
+            <h4 id="MouseButton">Mouse Button</h4>
             <div class="underline">
                 <h4>Public Fields</h4>
                 <table class="overview">
@@ -951,9 +1217,29 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="styled-row"></tr>
-                        <tr class="styled-row"></tr>
-                        <tr class="styled-row"></tr>
+                        <tr class="styled-row">
+                            <td>Left</td>
+                            <td>MouseButton</td>
+                            <td>The Left Mouse button</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Middle</td>
+                            <td>MouseButton</td>
+                            <td>The Middle Mouse button, a.k.a. the mouse wheel button</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Right</td>
+                            <td>MouseButton</td>
+                            <td>The Right Mouse button</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Last</td>
+                            <td>MouseButton</td>
+                            <td>The total number of MouseButton options, useful for checking if any button was pressed</td>
+                        </tr>
                     </tbody>
                 </table>
 
@@ -1004,9 +1290,75 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr class="styled-row"></tr>
-                        <tr class="styled-row"></tr>
-                        <tr class="styled-row"></tr>
+                        <tr class="styled-row">
+                            <td>Print</td>
+                            <td>void</td>
+                            <td>string</td>
+                            <td>Prints the message to the editor console</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Print</td>
+                            <td>void</td>
+                            <td>object</td>
+                            <td>Converts the object to a string and prints to the editor console</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Info</td>
+                            <td>void</td>
+                            <td>string</td>
+                            <td>Prints a Info message to the editor console</td>
+                        </tr>
+                        
+                        <tr class="styled-row">
+                            <td>Info</td>
+                            <td>void</td>
+                            <td>object</td>
+                            <td>Converts the object to a string and prints a Info message to the editor console</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Warn</td>
+                            <td>void</td>
+                            <td>string</td>
+                            <td>Prints a Warning message to the editor console</td>
+                        </tr>
+                        
+                        <tr class="styled-row">
+                            <td>Warn</td>
+                            <td>void</td>
+                            <td>object</td>
+                            <td>Converts the object to a string and prints a Warning message to the editor console</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Error</td>
+                            <td>void</td>
+                            <td>string</td>
+                            <td>Prints a Error message to the editor console</td>
+                        </tr>
+                        
+                        <tr class="styled-row">
+                            <td>Error</td>
+                            <td>void</td>
+                            <td>object</td>
+                            <td>Converts the object to a string and prints a Error message to the editor console</td>
+                        </tr>
+
+                        <tr class="styled-row">
+                            <td>Fatal</td>
+                            <td>void</td>
+                            <td>string</td>
+                            <td>Prints a Fatal message to the editor console</td>
+                        </tr>
+                        
+                        <tr class="styled-row">
+                            <td>Fatal</td>
+                            <td>void</td>
+                            <td>object</td>
+                            <td>Converts the object to a string and prints a Fatal message to the editor console</td>
+                        </tr>
                     </tbody>
                 </table>
             </div>

@@ -1,3 +1,13 @@
+:root {
+	--white: white;
+	--background: rgb(60, 60, 60);
+	--gray: var(--background);
+	--lightGray: rgb(100, 100, 100);
+    --lighterGray: rgb(180, 180, 180);
+	--black: black;
+	--greenAccent: #009879;
+}
+
 table {
     width: 100%;
 }
@@ -7,14 +17,13 @@ table {
     margin: 25px 0;
     font-size: 0.9em;
     font-family: sans-serif;
-    min-width: 400px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 .overview thead tr {
     height: 1rem;
-    background-color: #009879;
-    color: #ffffff;
+    background-color: var(--greenAccent);
+    color: var(--white);
     text-align: left;
 }
 
@@ -24,18 +33,24 @@ table {
 }
 
 .overview tbody tr {
-    border-bottom: 1px solid #dddddd;
+    border-bottom: 1px solid var(--white);
 }
 
 .overview tbody tr:nth-child(even) {
-    background-color: #f3f3f3;
+    background-color: var(--white);
+    color: var(--black);
+}
+
+.overview tbody tr:nth-child(odd) {
+    background-color: var(--lighterGray);
+    color: var(--black);
 }
 
 .overview tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
+    border-bottom: 2px solid var(--greenAccent);
 }
 
 .overview tbody tr:hover {
     font-weight: bold;
-    color: #009879;
+    color: var(--greenAccent);
 }
